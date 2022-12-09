@@ -2,10 +2,18 @@ package main
 
 import "fmt"
 
+// 声明全局变量
+var g int = 20
+
 func main() {
 
-	fmt.Println("------------------定义变量---------------------")
+	fmt.Println("---------------------定义变量---------------------")
+	fmt.Printf("g = %d\n", g)
+	// 声明局部变量
+	var g int = 10
+	fmt.Printf("g = %d\n", g)
 
+	fmt.Println("---------------------定义变量---------------------")
 	// 形式一
 	var n1, n2, n3 string
 	fmt.Println(n1)
